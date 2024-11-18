@@ -2,6 +2,7 @@
 ARG BASE_IMAGE=alpine:3.20
 # Use the build argument as the base image
 FROM ${BASE_IMAGE} AS runtime
+LABEL org.opencontainers.image.source https://github.com/edgewerks/uipathcli-image
 
 # Set environment variables for UiPath CLI
 ARG UIPATH_CLI_VERSION=latest
